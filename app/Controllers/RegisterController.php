@@ -19,14 +19,21 @@ class RegisterController extends Controller {
   public function register() {
         // Đọc giá trị của form
     $data = $this->getUserData();
-    $user = new User();
-    if ($user->validate($data)) {
-      $this->createUser($data);
-      $_SESSION['message'] = "User has been created successfully.";
-      $_SESSION['msg_type'] = "alert alert-success";
-      header('location: /login');
-    }
+    $userEmail = User::where("email", $data['email'])->first();
 
+    if ($userEmail === null) {
+      $user = new User();
+      if ($user->validate($data)) {
+        $this->createUser($data);
+        $_SESSION['message'] = "User has been created successfully.";
+        $_SESSION['msg_type'] = "alert alert-success";
+        header('location: /login');
+      }
+    }
+    
+    $_SESSION['message'] = "Email has been taken.";
+    $_SESSION['msg_type'] = "alert alert-danger";
+    header("location: /register");
   }
   protected function getUserData()
     {
