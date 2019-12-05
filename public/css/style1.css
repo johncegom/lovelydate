@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.w3-panel {
+  text-align: center;
+}
+/* The dots/bullets/indicators */
+.ava {
+  text-align: center;
+  margin-top: 5%;
+}
+.dot {
+  cursor: pointer;
+  height: 70px;
+  width: 70px;
+  margin: 0 2px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid;
+}
+
+.active,
+.dot:focus {
+  border-color: red;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+.quote {
+  text-align: center;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+.card-title {
+  font-size: 22px;
+}
+.card-text {
+  font-size: 16px;
+}
+.row {
+  height: auto;
+}
+
+.sm {
+  text-align: center;
+  width: 100px;
+  margin-top: 10%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  /* height: 450px; */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.height {
+  min-height: 650px;
+
+}
+
+.row {
+  margin: 0;
+}
+
+/* img {
+  border-radius: 5px 5px 0 0;
+  height: 250px;
+  width: 150px;
+  margin-bottom: 5px;
+} */
+
+.container {
+  padding: 2px 16px;
+}
+
+.section1 {
+  background-image: url(/img/home/bg.png);
+  background-size: cover;
+  /* overflow: hidden; */
+  background-repeat: no-repeat;
+}
+.section2 {
+  height: auto;
+}
+.logo {
+  width: 150px;
+  height: 100px;
+}
+.des {
+  opacity: 0.7;
+  margin-left: 25%;
+  width: 250px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 20px;
+}
+.smtit {
+  margin-top: 4%;
+  font: bold;
+  font-size: 33px;
+}
+.bg1 {
+  margin-top: 5%;
+  background: url(/img/home/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.textinside {
+  padding: 5% 0 0 0;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: 5%;
+  color: white;
+}
+
+.footer a {
+  color: black;
+}
+.kinhlup {
+  transition: transform 1s;
+}
+.kinhlup:hover {
+  transform: rotate(360deg);
+}
+.footer a:hover {
+  text-decoration: none;
+  color: rosybrown;
+}
+.footer a:focus {
+  text-decoration: none;
+}
+.piece {
+  margin-left: 15px;
+  border: none;
+  outline: none;
+  background-color: white;
+  font-size: 16px;
+}
+.footer button:hover {
+  text-decoration: none;
+  color: rosybrown;
+}
+.footer button:focus {
+  border: none;
+  outline: none;
+}
+.btn1 {
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  margin-top: 200px;
+  margin-left: 40%;
+  background-color: red;
+  opacity: 0.8;
+}
+
+.btn1:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  margin-top: 3%;
+  text-align: center;
+}
+.cpr {
+  font-size: 12px;
+}
+.nav-link {
+  font-size: 22px;
+}
+.titlee {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 26%;
+  width: 50%;
+}
+.form-group {
+  margin-left: 35%;
+  width: 5%;
+}
+.first {
+  margin-left: 35%;
+}
+.ip {
+  height: 29px;
+  width: 400px;
+}
+#sel1 {
+  height: 30px;
+}
+.search-container button {
+  padding: 6px 10px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+#labe {
+  margin-left: 35%;
+  font-size: 17px;
+}
+.search-container button:hover {
+  background: #ccc;
+}
+#myBtn {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  bottom: 20px;
+  right: 30px;
+  width: 110px;
+  height: 100px;
+  position: fixed;
+  z-index: 1;
+  font-size: 50px;
+  border: none;
+  outline: none;
+  background-image: url("/img/home/heart.png");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  padding: 15px;
+}
+
+#myBtn:hover {
+  opacity: 0.8;
+}
+#myModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+#modal-content {
+  position: relative;
+  background-color: white;
+  background-image: linear-gradient(to right, white, dodgerblue);
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close1 {
+  margin-left: 97%;
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header1 {
+  padding: 2px 16px;
+
+  color: black;
+}
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-footer1 {
+  padding: 2px 16px;
+
+  color: black;
+}
+
+
+/* Search result */
+.search-result {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}

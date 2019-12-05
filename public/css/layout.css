@@ -1,0 +1,33 @@
+a:hover {
+  cursor: pointer;
+}
+
+.extra {
+  min-height: 500px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cursor {
+  cursor: default;
+}
+
+/* Dropdown menu */
+
+.dropdown > .nav-link {
+  color: black;
+}
+
+.dropdown > .nav-link:hover {
+  color: red;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu > .dropdown-item:hover {
+  color: red;
+}
