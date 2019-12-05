@@ -1,6 +1,6 @@
 # lovelydate
 PHP with MVC model (for learning).
 
-Install composer. /n
+Install composer.
 Run command: composer update in project folder.
 Import database.
