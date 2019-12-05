@@ -50,7 +50,7 @@
       <div class="col-md-8">
         <a href="#"><h3><?php echo $this->e($user->name) ?></h3></a>
         <h4><?php echo $this->e($user->biography) ?></h4>
-        <h5><?php echo $this->e($user->dob) ?></h5>
+        <h5><?php echo $this->e(date("d-m-Y", strtotime($user->dob))) ?></h5>
       </div>
     </div>
 

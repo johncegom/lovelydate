@@ -6,6 +6,23 @@ use App\Models\User;
 use App\Models\Image;
 
 class UsersController extends Controller {
+
+  public function personalPage($userEmail) {
+    $userEmail = $userEmail . "@gmail.com";
+    
+    $user = User::where("email", $userEmail)->first();
+    
+
+    if (!$user) {
+      $this->notFound();
+    }
+
+    $data = [
+      'user' => $user
+    ];
+
+    echo $this->view->render("homes/personalpage", $data);
+  }
   
   public function edit($userId) {
 

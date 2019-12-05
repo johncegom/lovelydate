@@ -57,7 +57,7 @@
               $count = $count + 1;
             ?>
           </p>
-            <a href="/" class=" btn btn-primary">See more</a>
+            <a href="<?php echo '/user/' . strstr($user->email, '@', true) ?>" class=" btn btn-primary">See more</a>
         </div>
 
 

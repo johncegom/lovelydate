@@ -47,10 +47,10 @@
 						<td><?=$this->e($user->name) ?></td>
 						<td><?=$this->e($user->email) ?></td>
 						<td><?=$this->e($user->gender) ?></td>
-						<td><?=$this->e($user->dob) ?></td>
+						<td><?=$this->e(date("d-m-Y", strtotime($user->dob))) ?></td>
 						<td><?=$this->e($user->hobby) ?></td>
 						<td><?=$this->e($user->biography) ?></td>
-						<td><?=$this->e($user->created_at) ?></td>
+						<td><?=$this->e(date("d-m-Y", strtotime($user->created_at))) ?></td>
 						<td>
 							<div class="btn-group btn-group-sm">	
 								<a href="/admin/edit/<?=$this->e($user->id)?>" class="btn btn-warning mr-2"> 

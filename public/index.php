@@ -42,10 +42,9 @@ Router::post('/register', '\App\Controllers\RegisterController@register');
 // User
 Router::get('/admin/edit/(:num)', '\App\Controllers\UsersController@edit');
 Router::post('/admin/update/(:num)', '\App\Controllers\UsersController@update');
-Router::post('/admin/delete/(:num)',
-'\App\Controllers\UsersController@delete');
-Router::post('/search',
-'\App\Controllers\UsersController@search');
+Router::post('/admin/delete/(:num)', '\App\Controllers\UsersController@delete');
+Router::post('/search', '\App\Controllers\UsersController@search');
+Router::get('/user/(:any)', '\App\Controllers\UsersController@personalPage');
 
 
 Router::dispatch();
